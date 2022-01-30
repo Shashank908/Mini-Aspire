@@ -1,0 +1,611 @@
+{
+	"info": {
+		"_postman_id": "a4455ff4-d777-4498-90dc-af1dad0b7baa",
+		"name": "mini-aspire",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8000/api/api/v1/signin",
+			"request": {
+				"auth": {
+					"type": "bearer"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "589621289812694682",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "eng.raksa@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "123456",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/api/v1/signin",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"api",
+						"v1",
+						"signin"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/api/v1/repayments/pay/105",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "lHV2VDakdhUlo3UnhXTXJBREdyQldhNDFOQlZsU0l2S3IwNVF5V1Z0bGE5SXlnOUhMcjhoUDA361f62ecef366c",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "client_id",
+							"value": "3",
+							"type": "text"
+						},
+						{
+							"key": "amount",
+							"value": "20000",
+							"type": "text"
+						},
+						{
+							"key": "duration",
+							"value": "12",
+							"type": "text"
+						},
+						{
+							"key": "repayment_frequency",
+							"value": "3",
+							"type": "text"
+						},
+						{
+							"key": "interest_rate",
+							"value": "9",
+							"type": "text"
+						},
+						{
+							"key": "arrangement_fee",
+							"value": "100",
+							"type": "text"
+						},
+						{
+							"key": "date_contract_start",
+							"value": "12/12/2012",
+							"type": "text"
+						},
+						{
+							"key": "remarks",
+							"value": "Approve Please",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/v1/repayments/pay/105",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"repayments",
+						"pay",
+						"105"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/api/v1/repayments/get/105",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "lHV2VDakdhUlo3UnhXTXJBREdyQldhNDFOQlZsU0l2S3IwNVF5V1Z0bGE5SXlnOUhMcjhoUDA361f62ecef366c",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "client_id",
+							"value": "3",
+							"type": "text"
+						},
+						{
+							"key": "amount",
+							"value": "20000",
+							"type": "text"
+						},
+						{
+							"key": "duration",
+							"value": "12",
+							"type": "text"
+						},
+						{
+							"key": "repayment_frequency",
+							"value": "3",
+							"type": "text"
+						},
+						{
+							"key": "interest_rate",
+							"value": "9",
+							"type": "text"
+						},
+						{
+							"key": "arrangement_fee",
+							"value": "100",
+							"type": "text"
+						},
+						{
+							"key": "date_contract_start",
+							"value": "12/12/2012",
+							"type": "text"
+						},
+						{
+							"key": "remarks",
+							"value": "Approve Please",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/v1/repayments/get/105",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"repayments",
+						"get",
+						"105"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/api/v1/loans/get_freq_type",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "lHV2VDakdhUlo3UnhXTXJBREdyQldhNDFOQlZsU0l2S3IwNVF5V1Z0bGE5SXlnOUhMcjhoUDA361f62ecef366c",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "client_id",
+							"value": "3",
+							"type": "text"
+						},
+						{
+							"key": "amount",
+							"value": "20000",
+							"type": "text"
+						},
+						{
+							"key": "duration",
+							"value": "12",
+							"type": "text"
+						},
+						{
+							"key": "repayment_frequency",
+							"value": "3",
+							"type": "text"
+						},
+						{
+							"key": "interest_rate",
+							"value": "9",
+							"type": "text"
+						},
+						{
+							"key": "arrangement_fee",
+							"value": "100",
+							"type": "text"
+						},
+						{
+							"key": "date_contract_start",
+							"value": "12/12/2012",
+							"type": "text"
+						},
+						{
+							"key": "remarks",
+							"value": "Approve Please",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/v1/loans/get_freq_type",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"loans",
+						"get_freq_type"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/api/v1/loans/create",
+			"request": {
+				"auth": {
+					"type": "bearer"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "lHV2VDakdhUlo3UnhXTXJBREdyQldhNDFOQlZsU0l2S3IwNVF5V1Z0bGE5SXlnOUhMcjhoUDA361f62ecef366c",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "client_id",
+							"value": "3",
+							"type": "text"
+						},
+						{
+							"key": "amount",
+							"value": "20000",
+							"type": "text"
+						},
+						{
+							"key": "duration",
+							"value": "12",
+							"type": "text"
+						},
+						{
+							"key": "repayment_frequency",
+							"value": "3",
+							"type": "text"
+						},
+						{
+							"key": "interest_rate",
+							"value": "9",
+							"type": "text"
+						},
+						{
+							"key": "arrangement_fee",
+							"value": "100",
+							"type": "text"
+						},
+						{
+							"key": "date_contract_start",
+							"value": "12/12/2012",
+							"type": "text"
+						},
+						{
+							"key": "remarks",
+							"value": "Approve Please",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/v1/loans/create",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"loans",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/api/v1/loans/get/11111",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "lHV2VDakdhUlo3UnhXTXJBREdyQldhNDFOQlZsU0l2S3IwNVF5V1Z0bGE5SXlnOUhMcjhoUDA361f62ecef366c",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "first_name",
+							"value": "Shashank",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "last_name",
+							"value": "Shekhar",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "phone_number",
+							"value": "9062469611",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "",
+							"value": "555555",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/v1/loans/get/11111",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"loans",
+						"get",
+						"11111"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/api/v1/clients/get/3",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "lHV2VDakdhUlo3UnhXTXJBREdyQldhNDFOQlZsU0l2S3IwNVF5V1Z0bGE5SXlnOUhMcjhoUDA361f62ecef366c",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "first_name",
+							"value": "Shashank",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "last_name",
+							"value": "Shekhar",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "phone_number",
+							"value": "9062469611",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "",
+							"value": "555555",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/v1/clients/get/3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"clients",
+						"get",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/api/v1/clients/create",
+			"request": {
+				"auth": {
+					"type": "bearer"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "lHV2VDakdhUlo3UnhXTXJBREdyQldhNDFOQlZsU0l2S3IwNVF5V1Z0bGE5SXlnOUhMcjhoUDA361f62ecef366c",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "first_name",
+							"value": "Shashank",
+							"type": "text"
+						},
+						{
+							"key": "last_name",
+							"value": "Shekhar",
+							"type": "text"
+						},
+						{
+							"key": "phone_number",
+							"value": "9062469611",
+							"type": "text"
+						},
+						{
+							"key": "",
+							"value": "555555",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/v1/clients/create",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"clients",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/api/v1/loans/get/666",
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"warning": "This is a duplicate header and will be overridden by the Authorization header generated by Postman.",
+						"key": "Authorization",
+						"value": "lHV2VDakdhUlo3UnhXTXJBREdyQldhNDFOQlZsU0l2S3IwNVF5V1Z0bGE5SXlnOUhMcjhoUDA361f62ecef366c",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "test1@email.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "secret",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/v1/loans/get/666",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"loans",
+						"get",
+						"666"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

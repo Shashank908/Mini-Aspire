@@ -24,3 +24,5 @@ this can be run every updating code time
 ## Configuration
 
 All required environment variables can be found in .env.example
+## API Lists
+* `All APIs details are stored in documentation folder`
