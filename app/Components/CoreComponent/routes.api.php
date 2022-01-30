@@ -11,7 +11,7 @@ if (\File::isDirectory($modules)) {
     foreach ($list as $module) {
         if (\File::isDirectory($module)) {
             if (\File::isFile($module . DIRECTORY_SEPARATOR . "routes.api.php")) {
-                require_once $module . DIRECTORY_SEPARATOR . "routes.api.php";
+                require $module . DIRECTORY_SEPARATOR . "routes.api.php";
             }
         }
     }

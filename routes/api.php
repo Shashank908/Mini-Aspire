@@ -24,13 +24,13 @@ if (\File::isDirectory($component_path))
         {
             if (\File::isFile($module . DIRECTORY_SEPARATOR . "routes.api.php")) 
             {
-                require_once $module . DIRECTORY_SEPARATOR . "routes.api.php";
+                require $module . DIRECTORY_SEPARATOR . "routes.api.php";
             }
         }
     }
 }
 
-Route::group(['prefix' => '/api/v1'], function () {
+Route::group(['prefix' => '/v1'], function () {
     $controller = "\App\Http\Controllers\AuthenticationController";
     Route::post('/register', $controller . '@postRegister');
     Route::post('/signin', $controller . '@postLogin');

@@ -89,7 +89,7 @@ class LoanController extends Controller
             }
             return new LoanCollection($this->repository->filterLoan($data));
         }
-        $loan = Loan::active()->find($id);
+        dd('88');$loan = Loan::active()->find($id);
         if (!$loan) {
             return response()->json(['message' => trans("default.loan_not_found")], 404);
         }
